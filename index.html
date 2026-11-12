@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rancho Burger - Menú</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div aria-label="Bienvenido a Rancho Burger" class="intro-screen" id="introScreen">
+<div aria-hidden="true" class="intro-scene">
+<div class="intro-eyes">
+<span class="eye"><i></i></span><span class="eye"><i></i></span>
+</div>
+</div>
+<p class="intro-kicker">EL AUTÉNTICO SABOR DEL OESTE</p>
+<h2>RANCHO BURGER</h2>
+<p class="intro-subtitle">Fuego, campo y buen sabor</p>
+<span aria-hidden="true" class="intro-loading">PREPARANDO LA PARRILLA</span>
+</div>
+<div class="menu-container">
+<div class="quick-actions">\n            <a href="admin.html" class="quick-link admin-entry">Administración</a>
+<a class="quick-link" href="#menuInicio">✦ Explorar menú</a>
+<button aria-label="Abrir carrito" class="cart-open" id="openCart" type="button">
+                🛒 Mi pedido <span id="cartCount">0</span>
+</button>
+</div>
+<div id="menuInicio"></div>
+<header class="western-header" id="ranchoHero">
+<div aria-hidden="true" class="fire-stage">
+<div class="fire-glow"></div>
+<div class="flame flame-one"></div>
+<div class="flame flame-two"></div>
+<div class="flame flame-three"></div>
+<div class="flame flame-four"></div>
+<div class="fire-embers"></div>
+<div class="grill-line"></div>
+</div>
+<div class="western-decoration top-decoration">
+                ★　★　★
+            </div>
+<img alt="Rancho Burger Logo" class="logo" src="imagenes/rancho.png"/>
+<div class="brand-line">
+<span></span>
+<b>RANCHO BURGER</b>
+<span></span>
+</div>
+<h1>Rancho Burger</h1>
+<p class="slogan">
+                ¡Sabor auténtico a la parrilla!
+            </p>
+<div class="western-decoration bottom-decoration">
+                ★　✦　★
+            </div>
+</header>
+<!-- =========================
+             ENTRADAS
+        ========================== -->
+<section class="menu-section">
+<div class="section-title">
+<span class="title-decoration">✦</span>
+<h2>Entradas</h2>
+<span class="title-decoration">✦</span>
+</div>
+<img alt="Imagen de Entradas" class="section-image" src="imagenes/entradas.jpg"/>
+<div class="menu-item" data-food="empanadas" data-product-id="entradas--empanadas">
+<p>Empanadas</p>
+<span>$3.000</span>
+</div>
+<div class="menu-item" data-food="chorizo-arepa" data-product-id="entradas--chorizo-con-arepa">
+<p>Chorizo con Arepa</p>
+<span>$4.500</span>
+</div>
+<div class="menu-item" data-food="chorizo-papa" data-product-id="entradas--chorizo-con-papa-francesa">
+<p>Chorizo con Papa Francesa</p>
+<span>$6.500</span>
+</div>
+<div class="menu-item" data-food="pincho-pollo" data-product-id="entradas--pincho-pollo-apanado-francesa">
+<p>Pincho Pollo Apanado + francesa</p>
+<span>$6.500</span>
+</div>
+<div class="menu-item" data-food="nugget-pollo" data-product-id="entradas--nugget-de-pollo-apanado-francesa">
+<p>Nugget de pollo apanado + francesa</p>
+<span>$8.500</span>
+<p class="description">x 5 UNI</p>
+</div>
+</section>
+<!-- =========================
+             HAMBURGUESAS
+        ========================== -->
+<section class="menu-section">
+<div class="section-title">
+<span class="title-decoration">✦</span>
+<h2>Hamburguesas</h2>
+<span class="title-decoration">✦</span>
+</div>
+<img alt="Imagen de Hamburguesas" class="section-image" src="imagenes/hamburguesa.jpg"/>
+<div class="menu-item" data-food="hamburguesa-rancho" data-product-id="hamburguesas--de-la-casa-rancho">
+<p>De la Casa Rancho</p>
+<span>$20.000</span>
+<p class="description">
+                    carne 100% de res, Carne , pollo desmechado , tocineta, jamón, queso, huevo de codorniz
+                </p>
+</div>
+<div class="menu-item" data-food="hamburguesa-mixta" data-product-id="hamburguesas--mixta-carne-pollo">
+<p>Mixta Carne Pollo</p>
+<span>$20.000</span>
+<p class="description">
+                    carne 100% de res, carne de pollo apanada,Carne, pollo desmechado, jamón, queso, tocineta, huevo de codorniz
+                </p>
+</div>
+<div class="menu-item" data-food="hamburguesa-super-carne" data-product-id="hamburguesas--super-especial-coler">
+<p>Super Especial Coler</p>
+<span>$16.000</span>
+<p class="description">
+                    Carne especial coler ,pollo desmechado, carne desmechada, queso, jamón, tocineta, huevo de codorniz
+                </p>
+</div>
+<div class="menu-item" data-food="hamburguesa-mexicana" data-product-id="hamburguesas--mexicana">
+<p>Mexicana</p>
+<span>$17.000</span>
+<p class="description">
+                    Carne 100% de res,carne desmechada, pollo desmechado, huevo frito, tocineta, jamón, queso, maíz Tierno, jalapeños
+                </p>
+</div>
+<div class="menu-item" data-food="hamburguesa-doble-carne" data-product-id="hamburguesas--doble-carne">
+<p>Doble Carne</p>
+<span>$20.000</span>
+<p class="description">
+                    2 porciones de carne 100% de res, carne desmechada, pollo desmechado, queso, jamón, tocineta, huevo de codorniz
+                </p>
+</div>
+<div class="menu-item" data-food="hamburguesa-apanada" data-product-id="hamburguesas--apanada">
+<p>Apanada</p>
+<span>$17.000</span>
+<p class="description">
+                    Carne apanada de pollo, carne desmechada, pollo desmechado, jamón, queso, tocineta, huevo de codorniz
+                </p>
+</div>
+<div class="menu-item" data-food="hamburguesa-clasica" data-product-id="hamburguesas--clasica">
+<p>Clásica</p>
+<span>$8.000</span>
+<p class="description">
+                    Carne 100% de res, jamón, queso
+                </p>
+</div>
+</section>
+<!-- =========================
+             PERROS CALIENTES
+        ========================== -->
+<section class="menu-section">
+<div class="section-title">
+<span class="title-decoration">✦</span>
+<h2>Perros Calientes</h2>
+<span class="title-decoration">✦</span>
+</div>
+<img alt="Imagen de Perros Calientes" class="section-image" src="imagenes/perros calientes.jpg"/>
+<div class="menu-item" data-food="perro-rancho" data-product-id="perros-calientes--de-la-casa-rancho">
+<p>De la casa Rancho</p>
+<span>$13.000</span>
+<p class="description">
+                    Salchicha americana, carne desmechada, pollo desmechado, jamón, queso ,tocineta, huevo de codorniz
+                </p>
+</div>
+<div class="menu-item" data-food="chorriperro-especial" data-product-id="perros-calientes--choriperro-rancho">
+<p>Choriperro Rancho</p>
+<span>$13.000</span>
+<p class="description">
+                    Chorizo santarrosano, pollo desmechado, carne desmechada,jamón, tocineta, queso, huevo de codorniz
+                </p>
+</div>
+<div class="menu-item" data-food="chorriperro-sencillo" data-product-id="perros-calientes--choriperro-sencillo">
+<p>Choriperro Sencillo</p>
+<span>$9.000</span>
+<p class="description">
+                    Chorizo santarrosano, jamón, tocineta, queso, huevo de codorniz
+                </p>
+</div>
+<div class="menu-item" data-food="perro americano" data-product-id="perros-calientes--perro-americano">
+<p>perro americano</p>
+<span>$9.000</span>
+<p class="description">
+                    salchicha americana, papachip, jamon, queso, tocineta
+                </p>
+</div>
+</section>
+<!-- =========================
+             SALCHIPAPAS
+        ========================== -->
+<section class="menu-section">
+<div class="section-title">
+<span class="title-decoration">✦</span>
+<h2>Salchipapas</h2>
+<span class="title-decoration">✦</span>
+</div>
+<img alt="Imagen de Salchipapas" class="section-image" src="imagenes/salchipapas.jpg"/>
+<div class="menu-item" data-food="salchipapa-rancho" data-product-id="salchipapas--de-la-casa-rancho">
+<p>De la casa Rancho</p>
+<span>$20.000</span>
+<p class="description">
+                    Chorizo, salchicha, carne desmechada, pollo desmechado, jamón, queso y huevo de codorniz
+                </p>
+</div>
+<div class="menu-item" data-food="salchipapa-especial" data-product-id="salchipapas--especial">
+<p>Especial</p>
+<span>$12.000</span>
+<p class="description">
+                    Salchicha americana, carne desmechada, pollo desmechado, jamón, queso, huevo de codorniz
+                </p>
+</div>
+<div class="menu-item" data-food="salchipapa-sencilla" data-product-id="salchipapas--sencilla">
+<p>Sencilla</p>
+<span>$8.000</span>
+<p class="description">
+                    Salchicha americana, porción papa, queso
+                </p>
+</div>
+</section>
+<!-- =========================
+             MAZORCADA
+        ========================== -->
+<section class="menu-section">
+<div class="section-title">
+<span class="title-decoration">✦</span>
+<h2>Mazorcada</h2>
+<span class="title-decoration">✦</span>
+</div>
+<img alt="Imagen de Mazorcada" class="section-image" src="imagenes/mazorcada.jpg"/>
+<div class="menu-item" data-food="mazorcada-rancho" data-product-id="mazorcada--de-la-casa-rancho">
+<p>De la casa Rancho</p>
+<span>$20.000</span>
+<p class="description">
+                    salchicha americana, maiz tierno, chorizo, Pollo desmechado, carne desmechada, tocineta, jamón, queso, huevo de codorniz
+                </p>
+</div>
+<div class="menu-item" data-food="mazorcada-sencilla" data-product-id="mazorcada--sencilla">
+<p>Sencilla</p>
+<span>$12.000</span>
+<p class="description">
+                    Maíz tierno, salchicha americana, Pollo desmechado, carne desmechada, tocineta, jamón, queso, huevo de codorniz
+                </p>
+</div>
+</section>
+<!-- =========================
+             PATACÓN
+        ========================== -->
+<section class="menu-section">
+<div class="section-title">
+<span class="title-decoration">✦</span>
+<h2>Patacón</h2>
+<span class="title-decoration">✦</span>
+</div>
+<img alt="Imagen de Patacón" class="section-image" src="imagenes/patacon.jpg"/>
+<div class="menu-item" data-food="patacon-rancho-casa" data-product-id="patacon--de-la-casa-rancho">
+<p>De la casa Rancho</p>
+<span>$19.000</span>
+<p class="description">
+                    patacon, Pollo desmechado, carne desmechada, jamón, queso, huevo de codorniz, papa chip
+                </p>
+</div>
+</section>
+<!-- =========================
+             PARRILLA
+        ========================== -->
+<section class="menu-section">
+<div class="section-title">
+<span class="title-decoration">✦</span>
+<h2>Parrilla y Platos a la Carta</h2>
+<span class="title-decoration">✦</span>
+</div>
+<img alt="Imagen de Parrilla" class="section-image" src="imagenes/parrilla.jpg"/>
+<div class="menu-item" data-food="parrilla-rancho" data-product-id="parrilla-y-platos-a-la-carta--de-la-casa-rancho">
+<p>De la Casa Rancho</p>
+<span>$27.000</span>
+<p class="description">
+                    Carne, pollo, lomo de cerdo, chorizo, chicharron, costillas de cerdo, papa francesa, ensalada, patacon, yuca
+                </p>
+</div>
+<div class="menu-item" data-food="churrasco" data-product-id="parrilla-y-platos-a-la-carta--churrasco">
+<p>Churrasco</p>
+<span>$25.000</span>
+</div>
+<div class="menu-item" data-food="chicharronada" data-product-id="parrilla-y-platos-a-la-carta--chicharronada">
+<p>Chicharronada</p>
+<span>$18.000</span>
+</div>
+<div class="menu-item" data-food="churrasco-gratinado" data-product-id="parrilla-y-platos-a-la-carta--churrasco-gratinado">
+<p>Churrasco Gratinado</p>
+<span>$27.000</span>
+</div>
+<div class="menu-item" data-food="carne-parrilla" data-product-id="parrilla-y-platos-a-la-carta--carne-a-la-parrilla">
+<p>Carne a la Parrilla</p>
+<span>$25.000</span>
+</div>
+<div class="menu-item" data-food="sobrebarriga-plancha" data-product-id="parrilla-y-platos-a-la-carta--sobre-barriga-a-la-plancha">
+<p>Sobre Barriga a la Plancha</p>
+<span>$23.000</span>
+</div>
+<div class="menu-item" data-food="sobrebarriga-salsa" data-product-id="parrilla-y-platos-a-la-carta--sobre-barriga-en-salsa">
+<p>Sobre Barriga en Salsa</p>
+<span>$23.000</span>
+</div>
+<div class="menu-item" data-food="lomo-cerdo" data-product-id="parrilla-y-platos-a-la-carta--lomo-de-cerdo-a-la-parrilla">
+<p>Lomo de Cerdo a la Parrilla</p>
+<span>$20.000</span>
+</div>
+<div class="menu-item" data-food="pechuga-gratinada" data-product-id="parrilla-y-platos-a-la-carta--pechuga-gratinada">
+<p>Pechuga Gratinada</p>
+<span>$23.000</span>
+</div>
+<div class="menu-item" data-food="pechuga-plancha" data-product-id="parrilla-y-platos-a-la-carta--pechuga-a-la-plancha">
+<p>Pechuga a la plancha</p>
+<span>$20.000</span>
+</div>
+<div class="menu-item" data-food="pechuga-champinones" data-product-id="parrilla-y-platos-a-la-carta--pechuga-en-salsa-de-champinones">
+<p>Pechuga en Salsa de Champiñones</p>
+<span>$25.000</span>
+</div>
+<div class="menu-item" data-food="costilla-ahumada" data-product-id="parrilla-y-platos-a-la-carta--costillas-en-salsa-bbq">
+<p>Costillas en salsa BBQ</p>
+<span>$25.000</span>
+</div>
+<div class="menu-item" data-food="costillas-doraditas" data-product-id="parrilla-y-platos-a-la-carta--costillas-de-cerdo-doraditas">
+<p>Costillas de Cerdo Doraditas</p>
+<span>$23.000</span>
+</div>
+<div class="menu-item" data-food="alitas-bbq" data-product-id="parrilla-y-platos-a-la-carta--alitas-bbq">
+<p>Alitas BBQ</p>
+<span>$18.000</span>
+</div>
+<div class="menu-item" data-food="bandeja-paisa" data-product-id="parrilla-y-platos-a-la-carta--bandeja-paisa">
+<p>Bandeja Paisa</p>
+<span>$20.000</span>
+</div>
+</section>
+<!-- =========================
+             PESCADOS
+        ========================== -->
+<section class="menu-section">
+<div class="section-title">
+<span class="title-decoration">✦</span>
+<h2>Pescados</h2>
+<span class="title-decoration">✦</span>
+</div>
+<img alt="Imagen de Pescados" class="section-image" src="imagenes/pescados.jpg"/>
+<div class="menu-item" data-food="mojarra" data-product-id="pescados--mojarra">
+<p>Mojarra</p>
+<span>$25.000</span>
+</div>
+<div class="menu-item" data-food="bagre-frito" data-product-id="pescados--bagre-frito">
+<p>Bagre frito</p>
+<span>$25.000</span>
+</div>
+<div class="menu-item" data-food="bocon-en-salsa" data-product-id="pescados--bagre-en-salsa">
+<p>Bagre en Salsa</p>
+<span>$25.000</span>
+</div>
+<div class="menu-item" data-food="trucha" data-product-id="pescados--trucha">
+<p>Trucha</p>
+<span>$25.000</span>
+</div>
+<div class="menu-item" data-food="trucha-gratinada" data-product-id="pescados--trucha-gratinada">
+<p>Trucha Gratinada</p>
+<span>$28.000</span>
+</div>
+<div class="menu-item" data-food="Filete-de-filepia-apanado" data-product-id="pescados--filete-de-filepia-apanado">
+<p>Filete de filepia apanado</p>
+<span>$25.000</span>
+</div>
+</section>
+<!-- =========================
+             COMBOS
+        ========================== -->
+<section class="menu-section">
+<div class="section-title">
+<span class="title-decoration">✦</span>
+<h2>Combos</h2>
+<span class="title-decoration">✦</span>
+</div>
+<img alt="Imagen de Combos" class="section-image" src="imagenes/combos.jpg"/>
+<div class="menu-item" data-food="combo-hamburguesa" data-product-id="combos--hamburguesa-clasica-papa-gaseosa">
+<p>Hamburguesa clasica + Papa + Gaseosa</p>
+<span>$13.000</span>
+</div>
+<div class="menu-item" data-food="combo-hamburguesa" data-product-id="combos--hamburguesa-coler-papa-gaseosa">
+<p>Hamburguesa coler + Papa + Gaseosa</p>
+<span>$21.000</span>
+</div>
+<div class="menu-item" data-food="combo-hamburguesa" data-product-id="combos--hamburguesa-doble-carne-papa-gaseosa">
+<p>Hamburguesa doble carne + Papa + Gaseosa</p>
+<span>$25.000</span>
+</div>
+<div class="menu-item" data-food="combo-hamburguesa" data-product-id="combos--hamburguesa-mixta-carne-pollo-papa-gaseosa">
+<p>Hamburguesa mixta carne pollo+ Papa + Gaseosa</p>
+<span>$25.000</span>
+</div>
+<div class="menu-item" data-food="combo-hamburguesa" data-product-id="combos--hamburguesa-apanada-papa-gaseosa">
+<p>Hamburguesa apanada+ Papa + Gaseosa</p>
+<span>$22.000</span>
+</div>
+<div class="menu-item" data-food="combo-hamburguesa" data-product-id="combos--hamburguesa-mexicana-papa-gaseosa">
+<p>Hamburguesa mexicana+ Papa + Gaseosa</p>
+<span>$22.000</span>
+</div>
+<div class="menu-item" data-food="combo-hamburguesa" data-product-id="combos--hamburguesa-de-la-casa-rancho-papa-gaseosa">
+<p>Hamburguesa de la casa rancho+ Papa + Gaseosa</p>
+<span>$23.000</span>
+</div>
+<div class="menu-item" data-food="combo-perro" data-product-id="combos--perro-caliente-papa-gaseosa">
+<p>Perro Caliente + Papa + Gaseosa</p>
+<span>$13.000</span>
+</div>
+<div class="menu-item" data-food="combo-chorriperro" data-product-id="combos--chorriperro-papa-gaseosa">
+<p>Chorriperro + Papa + Gaseosa</p>
+<span>$13.000</span>
+</div>
+</section>
+<!-- =========================
+             BEBIDAS
+        ========================== -->
+<section class="menu-section">
+<div class="section-title">
+<span class="title-decoration">✦</span>
+<h2>Bebidas</h2>
+<span class="title-decoration">✦</span>
+</div>
+<img alt="Imagen de Bebidas" class="section-image" src="imagenes/bebidas.jpg"/>
+<div class="menu-item" data-food="gaseosa" data-product-id="bebidas--gaseosa">
+<p>Gaseosa</p>
+<span>$3.000</span>
+</div>
+<div class="menu-item" data-food="gaseosa" data-product-id="bebidas--pony-malta">
+<p>Pony malta</p>
+<span>$3.000</span>
+</div>
+<div class="menu-item" data-food="gaseosa" data-product-id="bebidas--cola-pola">
+<p>Cola &amp; pola</p>
+<span>$3.000</span>
+</div>
+<div class="menu-item" data-food="cerveza-corona" data-product-id="bebidas--cerveza-corona">
+<p>Cerveza Corona</p>
+<span>$4.000</span>
+</div>
+<div class="menu-item" data-food="jugos-naturales" data-product-id="bebidas--cerveza-poker">
+<p>Cerveza poker</p>
+<span>$3.500</span>
+</div>
+<div class="menu-item" data-food="jugos-naturales" data-product-id="bebidas--cerveza-aguila">
+<p>Cerveza aguila</p>
+<span>$3.500</span>
+</div>
+</section>
+<!-- =========================
+             JUGOS NATURALES
+        ========================== -->
+<section class="menu-section">
+<div class="section-title">
+<span class="title-decoration">✦</span>
+<h2>Jugos Naturales</h2>
+<span class="title-decoration">✦</span>
+</div>
+<img alt="Imagen de Jugos Naturales" class="section-image" src="imagenes/jugos naturales.jpg"/>
+<div class="menu-item" data-food="gaseosa" data-product-id="jugos-naturales--limonada-de-coco">
+<p>limonada de coco</p>
+<span>$8.000</span>
+</div>
+<div class="menu-item" data-food="cerveza-corona" data-product-id="jugos-naturales--limonada-de-cereza">
+<p>limonada de cereza</p>
+<span>$8.000</span>
+</div>
+<div class="menu-item" data-food="jugos-naturales" data-product-id="jugos-naturales--guanabana">
+<p>GUANABANA</p>
+</div>
+<div class="menu-item" data-food="jugos-naturales" data-product-id="jugos-naturales--mango">
+<p>MANGO</p>
+</div>
+<div class="menu-item" data-food="jugos-naturales" data-product-id="jugos-naturales--mora">
+<p>MORA</p>
+</div>
+<div class="menu-item" data-food="jugos-naturales" data-product-id="jugos-naturales--fresa">
+<p>FRESA</p>
+</div>
+<div class="menu-item" data-food="jugos-naturales" data-product-id="jugos-naturales--lulo">
+<p>LULO</p>
+</div>
+<div class="menu-item" data-food="jugos-naturales" data-product-id="jugos-naturales--maracuya">
+<p>MARACUYA</p>
+</div>
+<div class="menu-item" data-food="jugos-naturales" data-product-id="jugos-naturales--uva">
+<p>UVA</p>
+</div>
+<div class="menu-item" data-food="jugos-naturales" data-product-id="jugos-naturales--en-leche-a-7-000-y-en-agua-a-5-000">
+<p>en leche a 7.000 y en agua a 5.000</p>
+</div>
+</section>
+</div>
+<aside aria-hidden="true" class="cart-panel" id="cartPanel">
+<div class="cart-header">
+<div><span class="cart-eyebrow">TU PEDIDO</span><h2>Carrito del Rancho</h2></div>
+<button aria-label="Cerrar carrito" class="cart-close" id="closeCart" type="button">×</button>
+</div>
+<div class="cart-items" id="cartItems"><p class="cart-empty">Tu carrito está esperando algo delicioso 🤠</p></div>
+<div class="cart-summary">
+<div><span>Subtotal</span><strong id="cartSubtotal">$0</strong></div>
+<small>El domicilio, si aplica, se confirma al coordinar por WhatsApp.</small>
+<button class="checkout-button" disabled="" id="checkoutButton" type="button">CONTINUAR CON MI PEDIDO</button>
+</div>
+</aside>
+<div class="cart-backdrop" id="cartBackdrop"></div>
+<div aria-hidden="true" class="checkout-overlay" id="checkoutOverlay">
+<form class="checkout-card" id="checkoutForm">
+<button aria-label="Cerrar" class="checkout-close" id="closeCheckout" type="button">×</button>
+<span class="cart-eyebrow">CASI LISTO</span>
+<h2>Datos para tu pedido</h2>
+<p class="checkout-intro">Completa tus datos. WhatsApp se abrirá con el resumen para que confirmes el envío.</p>
+<label>Nombre completo<input maxlength="80" name="customerName" placeholder="¿Cómo te llamas?" required=""/></label>
+<label>Número de celular<input inputmode="tel" maxlength="20" name="phone" placeholder="Tu número de contacto" required="" type="tel"/></label>
+<label>Tipo de pedido<select id="orderType" name="orderType" required=""><option value="Domicilio">Domicilio</option><option value="Recoger en el local">Recoger en el local</option></select></label>
+<div id="addressFields">
+<label>Dirección de entrega<input id="address" maxlength="140" name="address" placeholder="Calle, carrera, número y complemento"/></label>
+<label>Barrio<input id="neighborhood" maxlength="80" name="neighborhood" placeholder="Tu barrio"/></label>
+</div>
+<label>Forma de pago<select name="payment" required=""><option value="">Selecciona una opción</option><option>Efectivo</option><option>Transferencia</option><option>Pago al recoger</option></select></label>
+<label>Notas del pedido <span class="optional">(opcional)</span><textarea maxlength="300" name="notes" placeholder="Indicaciones, adicionales o aclaraciones" rows="2"></textarea></label>
+<button class="checkout-button" type="submit">ABRIR WHATSAPP Y ENVIAR PEDIDO</button>
+<small class="checkout-note">Se abrirá WhatsApp con el mensaje listo. Debes tocar “Enviar” para confirmar tu pedido.</small>
+</form>
+</div>
+<div class="toast-message" id="toastMessage" role="status"></div>
+<!-- =========================
+         MODAL
+    ========================== -->
+<div id="food-details-overlay">
+<div id="food-details-content">
+<span class="close-button">×</span>
+<div class="modal-ribbon">
+                RANCHO BURGER
+            </div>
+<img alt="Imagen de la comida" id="food-image" src=""/>
+<h3 id="food-name"></h3>
+<p id="food-ingredients"></p>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+<script src="script.js"></script>
+<script src="carrito.js"></script>
+</body>
+</html>
+</body>
+</html>

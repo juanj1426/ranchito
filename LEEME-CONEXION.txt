@@ -1,0 +1,31 @@
+RANCHO BURGER - CONEXION DEL PANEL ADMINISTRATIVO
+
+Se añadieron identificadores data-product-id a 68 productos del HTML, enlazándolos con los IDs del catálogo en supabase.sql.
+Productos sin coincidencia: 0.
+
+ARCHIVOS:
+- index.html: menú público; carga Supabase y sincroniza precios.
+- script.js: consulta precios activos y conserva el modal de producto.
+- admin.html + admin.css + admin.js: panel privado de precios.
+- supabase-config.js: configuración pública del proyecto Supabase.
+- supabase.sql: tablas, políticas RLS y catálogo inicial.
+
+PASOS OBLIGATORIOS EN SUPABASE:
+1. Abre el proyecto indicado en supabase-config.js.
+2. Ve a SQL Editor y ejecuta el archivo supabase.sql completo.
+3. En Authentication > Users, crea el usuario administrador con su correo y contraseña.
+4. Copia el UUID de ese usuario.
+5. En SQL Editor ejecuta:
+   insert into public.admin_users (id) values ('PEGA-AQUI-EL-UUID');
+6. Publica/sube la carpeta completa conservando la estructura.
+7. Abre admin.html, inicia sesión y cambia un precio. Recarga index.html para verlo actualizado.
+
+SEGURIDAD:
+- La clave anon/publishable del frontend es pública por diseño; la seguridad depende de las políticas RLS.
+- Nunca pongas una service_role key en estos archivos.
+- Solo usuarios cuyo UUID esté en public.admin_users pueden consultar el catálogo completo y actualizar precios.
+- El link Administración en la página pública no protege el panel: la autenticación y RLS sí.
+- No compartas la contraseña del administrador.
+
+NOTA:
+El precio se sincroniza desde Supabase cuando se carga la página pública. Si Supabase falla, se mantienen visibles los precios de respaldo escritos en el HTML.
